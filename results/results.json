@@ -1,0 +1,434 @@
+{
+  "assumptions": {
+    "p_reply_healthy": 0.9,
+    "detect_within_h": 24.0
+  },
+  "base_definition": "household without heat pump (electric boiler), 15-min data",
+  "base_all": {
+    "n": 320,
+    "detection_rate": 0.88125,
+    "median_tta_h": 12.038454283472223,
+    "p90_tta_h": 21.37393342297222,
+    "median_checkin_h": 11.604537419166666,
+    "reply0.9": {
+      "household_years": 36.2,
+      "active_share": 0.9347727272727273,
+      "false_relative_per_hh_year": 1.5208333333333335,
+      "false_relative_home_days_per_hh_year": 1.2996212121212123,
+      "checkins_per_hh_year": 18.27765151515152,
+      "morning_share": 0.6545454545454545
+    },
+    "reply0.0": {
+      "household_years": 36.2,
+      "active_share": 0.9347727272727273,
+      "false_relative_per_hh_year": 14.185227272727275,
+      "false_relative_home_days_per_hh_year": 11.58598484848485,
+      "checkins_per_hh_year": 18.27765151515152,
+      "morning_share": 0.7309941520467836
+    }
+  },
+  "base_by_persona": {
+    "early_riser": {
+      "n": 64,
+      "detection_rate": 0.96875,
+      "median_tta_h": 11.123243184027778,
+      "p90_tta_h": 20.02444078111111,
+      "median_checkin_h": 10.59465114736111,
+      "reply0.9": {
+        "household_years": 7.2,
+        "active_share": 1.0,
+        "false_relative_per_hh_year": 1.7973484848484849,
+        "false_relative_home_days_per_hh_year": 1.6590909090909092,
+        "checkins_per_hh_year": 23.78030303030303,
+        "morning_share": 0.6153846153846154
+      },
+      "reply0.0": {
+        "household_years": 7.2,
+        "active_share": 1.0,
+        "false_relative_per_hh_year": 18.111742424242426,
+        "false_relative_home_days_per_hh_year": 15.34659090909091,
+        "checkins_per_hh_year": 23.78030303030303,
+        "morning_share": 0.7022900763358778
+      }
+    },
+    "late_sleeper": {
+      "n": 64,
+      "detection_rate": 0.703125,
+      "median_tta_h": 11.510739009444444,
+      "p90_tta_h": 22.448600697444444,
+      "median_checkin_h": 11.244589299444446,
+      "reply0.9": {
+        "household_years": 7.2,
+        "active_share": 0.7840909090909091,
+        "false_relative_per_hh_year": 0.9678030303030304,
+        "false_relative_home_days_per_hh_year": 0.8295454545454546,
+        "checkins_per_hh_year": 15.208333333333334,
+        "morning_share": 0.5714285714285714
+      },
+      "reply0.0": {
+        "household_years": 7.2,
+        "active_share": 0.7840909090909091,
+        "false_relative_per_hh_year": 11.475378787878789,
+        "false_relative_home_days_per_hh_year": 9.954545454545455,
+        "checkins_per_hh_year": 15.208333333333334,
+        "morning_share": 0.7831325301204819
+      }
+    },
+    "irregular": {
+      "n": 64,
+      "detection_rate": 0.8125,
+      "median_tta_h": 13.00733701875,
+      "p90_tta_h": 21.78317625825,
+      "median_checkin_h": 12.666236461111112,
+      "reply0.9": {
+        "household_years": 7.2,
+        "active_share": 0.9022727272727272,
+        "false_relative_per_hh_year": 1.5208333333333335,
+        "false_relative_home_days_per_hh_year": 1.1060606060606062,
+        "checkins_per_hh_year": 14.793560606060607,
+        "morning_share": 0.45454545454545453
+      },
+      "reply0.0": {
+        "household_years": 7.2,
+        "active_share": 0.9022727272727272,
+        "false_relative_per_hh_year": 11.613636363636365,
+        "false_relative_home_days_per_hh_year": 8.84848484848485,
+        "checkins_per_hh_year": 14.793560606060607,
+        "morning_share": 0.6666666666666666
+      }
+    },
+    "holiday_goer": {
+      "n": 64,
+      "detection_rate": 0.96875,
+      "median_tta_h": 12.768215957916667,
+      "p90_tta_h": 20.486322660555555,
+      "median_checkin_h": 12.060278792083334,
+      "reply0.9": {
+        "household_years": 7.2,
+        "active_share": 1.0,
+        "false_relative_per_hh_year": 1.6590909090909092,
+        "false_relative_home_days_per_hh_year": 1.3825757575757576,
+        "checkins_per_hh_year": 19.494318181818183,
+        "morning_share": 0.75
+      },
+      "reply0.0": {
+        "household_years": 7.2,
+        "active_share": 1.0,
+        "false_relative_per_hh_year": 16.03787878787879,
+        "false_relative_home_days_per_hh_year": 12.581439393939394,
+        "checkins_per_hh_year": 19.494318181818183,
+        "morning_share": 0.75
+      }
+    },
+    "guest_visits": {
+      "n": 64,
+      "detection_rate": 0.953125,
+      "median_tta_h": 12.046410328333334,
+      "p90_tta_h": 21.132040568333334,
+      "median_checkin_h": 11.372294204444444,
+      "reply0.9": {
+        "household_years": 7.2,
+        "active_share": 0.9875,
+        "false_relative_per_hh_year": 1.6590909090909092,
+        "false_relative_home_days_per_hh_year": 1.5208333333333335,
+        "checkins_per_hh_year": 18.111742424242426,
+        "morning_share": 0.8333333333333334
+      },
+      "reply0.0": {
+        "household_years": 7.2,
+        "active_share": 0.9875,
+        "false_relative_per_hh_year": 13.6875,
+        "false_relative_home_days_per_hh_year": 11.198863636363637,
+        "checkins_per_hh_year": 18.111742424242426,
+        "morning_share": 0.7575757575757576
+      }
+    }
+  },
+  "base_by_event": {
+    "fall": {
+      "n": 160,
+      "detection_rate": 0.84375,
+      "median_tta_h": 16.0177046525,
+      "p90_tta_h": 21.873527020333334,
+      "median_checkin_h": 16.461663816944444
+    },
+    "hospital": {
+      "n": 40,
+      "detection_rate": 0.875,
+      "median_tta_h": 17.17198425,
+      "p90_tta_h": 22.59110391761111,
+      "median_checkin_h": 17.700272608333332
+    },
+    "night_fall": {
+      "n": 120,
+      "detection_rate": 0.9333333333333333,
+      "median_tta_h": 11.031184485833332,
+      "p90_tta_h": 13.665837730888889,
+      "median_checkin_h": 10.281184485833332
+    }
+  },
+  "heat_pump": {
+    "base": {
+      "n": 320,
+      "detection_rate": 0.88125,
+      "median_tta_h": 12.038454283472223,
+      "p90_tta_h": 21.37393342297222,
+      "median_checkin_h": 11.604537419166666,
+      "winter": {
+        "n": 107,
+        "detection_rate": 0.8691588785046729,
+        "median_tta_h": 12.539951566944445,
+        "p90_tta_h": 20.45152479777778,
+        "median_checkin_h": 11.836900094444445
+      },
+      "reply0.9": {
+        "household_years": 36.2,
+        "active_share": 0.9347727272727273,
+        "false_relative_per_hh_year": 1.5208333333333335,
+        "false_relative_home_days_per_hh_year": 1.2996212121212123,
+        "checkins_per_hh_year": 18.27765151515152,
+        "morning_share": 0.6545454545454545
+      }
+    },
+    "hp1.0": {
+      "n": 320,
+      "detection_rate": 0.4875,
+      "median_tta_h": 12.85009466888889,
+      "p90_tta_h": 21.463596587916665,
+      "median_checkin_h": 17.84762324263889,
+      "winter": {
+        "n": 107,
+        "detection_rate": 0.411214953271028,
+        "median_tta_h": 13.451799415277778,
+        "p90_tta_h": 21.60795373652778,
+        "median_checkin_h": 20.136868982499998
+      },
+      "reply0.9": {
+        "household_years": 36.2,
+        "active_share": 0.8738636363636364,
+        "false_relative_per_hh_year": 1.1060606060606062,
+        "false_relative_home_days_per_hh_year": 0.9954545454545456,
+        "checkins_per_hh_year": 15.23598484848485,
+        "morning_share": 0.725
+      }
+    },
+    "hp2.0": {
+      "n": 320,
+      "detection_rate": 0.415625,
+      "median_tta_h": 12.29697305861111,
+      "p90_tta_h": 21.004753121444445,
+      "median_checkin_h": 17.149893768333335,
+      "winter": {
+        "n": 107,
+        "detection_rate": 0.27102803738317754,
+        "median_tta_h": 12.240952574166666,
+        "p90_tta_h": 20.944415108277777,
+        "median_checkin_h": 21.01355473541667
+      },
+      "reply0.9": {
+        "household_years": 36.2,
+        "active_share": 0.8845454545454545,
+        "false_relative_per_hh_year": 1.1060606060606062,
+        "false_relative_home_days_per_hh_year": 1.078409090909091,
+        "checkins_per_hh_year": 16.065530303030304,
+        "morning_share": 0.675
+      }
+    },
+    "hp3.5": {
+      "n": 320,
+      "detection_rate": 0.409375,
+      "median_tta_h": 12.328436550555555,
+      "p90_tta_h": 21.139835023333333,
+      "median_checkin_h": 17.781622586250002,
+      "winter": {
+        "n": 107,
+        "detection_rate": 0.27102803738317754,
+        "median_tta_h": 12.328436550555555,
+        "p90_tta_h": 21.153448367444444,
+        "median_checkin_h": 21.044566583055555
+      },
+      "reply0.9": {
+        "household_years": 36.2,
+        "active_share": 0.8662878787878788,
+        "false_relative_per_hh_year": 1.1890151515151517,
+        "false_relative_home_days_per_hh_year": 1.1337121212121213,
+        "checkins_per_hh_year": 17.088636363636365,
+        "morning_share": 0.7441860465116279
+      }
+    }
+  },
+  "resolution": {
+    "boiler_only": {
+      "1": {
+        "n": 320,
+        "detection_rate": 0.78125,
+        "median_tta_h": 10.063999879861111,
+        "p90_tta_h": 19.920694646194445,
+        "median_checkin_h": 10.147827805833334,
+        "reply0.9": {
+          "household_years": 36.2,
+          "active_share": 0.9934848484848485,
+          "false_relative_per_hh_year": 0.4977272727272728,
+          "false_relative_home_days_per_hh_year": 0.2488636363636364,
+          "checkins_per_hh_year": 7.963636363636365,
+          "morning_share": 0.5
+        }
+      },
+      "5": {
+        "n": 320,
+        "detection_rate": 0.946875,
+        "median_tta_h": 10.562025855,
+        "p90_tta_h": 19.952551533055555,
+        "median_checkin_h": 10.004362884999999,
+        "reply0.9": {
+          "household_years": 36.2,
+          "active_share": 0.9927272727272727,
+          "false_relative_per_hh_year": 0.6359848484848486,
+          "false_relative_home_days_per_hh_year": 0.41477272727272735,
+          "checkins_per_hh_year": 9.263257575757576,
+          "morning_share": 0.4782608695652174
+        }
+      },
+      "15": {
+        "n": 320,
+        "detection_rate": 0.88125,
+        "median_tta_h": 12.038454283472223,
+        "p90_tta_h": 21.37393342297222,
+        "median_checkin_h": 11.604537419166666,
+        "reply0.9": {
+          "household_years": 36.2,
+          "active_share": 0.9347727272727273,
+          "false_relative_per_hh_year": 1.5208333333333335,
+          "false_relative_home_days_per_hh_year": 1.2996212121212123,
+          "checkins_per_hh_year": 18.27765151515152,
+          "morning_share": 0.6545454545454545
+        }
+      },
+      "30": {
+        "n": 320,
+        "detection_rate": 0.55,
+        "median_tta_h": 13.382616361666667,
+        "p90_tta_h": 22.2258134425,
+        "median_checkin_h": 12.951799415277778,
+        "reply0.9": {
+          "household_years": 36.2,
+          "active_share": 0.6096212121212121,
+          "false_relative_per_hh_year": 1.631439393939394,
+          "false_relative_home_days_per_hh_year": 1.3825757575757578,
+          "checkins_per_hh_year": 20.48977272727273,
+          "morning_share": 0.6949152542372882
+        }
+      },
+      "60": {
+        "n": 320,
+        "detection_rate": 0.1,
+        "median_tta_h": 12.466306512222221,
+        "p90_tta_h": 21.339419878,
+        "median_checkin_h": 14.569720419722222,
+        "reply0.9": {
+          "household_years": 36.2,
+          "active_share": 0.2431060606060606,
+          "false_relative_per_hh_year": 1.2166666666666668,
+          "false_relative_home_days_per_hh_year": 1.1613636363636366,
+          "checkins_per_hh_year": 12.802651515151517,
+          "morning_share": 0.7272727272727273
+        }
+      }
+    },
+    "heat_pump_2kw": {
+      "1": {
+        "n": 320,
+        "detection_rate": 0.45,
+        "median_tta_h": 10.152360822777778,
+        "p90_tta_h": 20.646709995472225,
+        "median_checkin_h": 16.549796825,
+        "reply0.9": {
+          "household_years": 36.2,
+          "active_share": 0.9979545454545454,
+          "false_relative_per_hh_year": 0.41477272727272735,
+          "false_relative_home_days_per_hh_year": 0.22121212121212125,
+          "checkins_per_hh_year": 7.493560606060607,
+          "morning_share": 0.26666666666666666
+        }
+      },
+      "5": {
+        "n": 320,
+        "detection_rate": 0.584375,
+        "median_tta_h": 11.32055867388889,
+        "p90_tta_h": 21.08453688861111,
+        "median_checkin_h": 15.757293420833333,
+        "reply0.9": {
+          "household_years": 36.2,
+          "active_share": 0.9862878787878788,
+          "false_relative_per_hh_year": 0.6359848484848486,
+          "false_relative_home_days_per_hh_year": 0.41477272727272735,
+          "checkins_per_hh_year": 10.977651515151516,
+          "morning_share": 0.6521739130434783
+        }
+      },
+      "15": {
+        "n": 320,
+        "detection_rate": 0.415625,
+        "median_tta_h": 12.29697305861111,
+        "p90_tta_h": 21.004753121444445,
+        "median_checkin_h": 17.149893768333335,
+        "reply0.9": {
+          "household_years": 36.2,
+          "active_share": 0.8845454545454545,
+          "false_relative_per_hh_year": 1.1060606060606062,
+          "false_relative_home_days_per_hh_year": 1.078409090909091,
+          "checkins_per_hh_year": 16.065530303030304,
+          "morning_share": 0.675
+        }
+      },
+      "30": {
+        "n": 320,
+        "detection_rate": 0.190625,
+        "median_tta_h": 13.074749287222224,
+        "p90_tta_h": 18.89596867138889,
+        "median_checkin_h": 18.14596867138889,
+        "reply0.9": {
+          "household_years": 36.2,
+          "active_share": 0.5545454545454546,
+          "false_relative_per_hh_year": 1.2719696969696972,
+          "false_relative_home_days_per_hh_year": 1.1337121212121213,
+          "checkins_per_hh_year": 16.922727272727276,
+          "morning_share": 0.6521739130434783
+        }
+      },
+      "60": {
+        "n": 320,
+        "detection_rate": 0.046875,
+        "median_tta_h": 12.921410328333334,
+        "p90_tta_h": 21.080215720444443,
+        "median_checkin_h": 20.267136552083333,
+        "reply0.9": {
+          "household_years": 36.2,
+          "active_share": 0.13636363636363635,
+          "false_relative_per_hh_year": 0.8295454545454547,
+          "false_relative_home_days_per_hh_year": 0.8295454545454547,
+          "checkins_per_hh_year": 9.65037878787879,
+          "morning_share": 0.9
+        }
+      }
+    }
+  },
+  "dst": {
+    "local_clock": {
+      "household_years": 36.2,
+      "active_share": 0.9347727272727273,
+      "false_relative_per_hh_year": 1.5208333333333335,
+      "false_relative_home_days_per_hh_year": 1.2996212121212123,
+      "checkins_per_hh_year": 18.27765151515152,
+      "morning_share": 0.6545454545454545
+    },
+    "fixed_clock": {
+      "household_years": 36.2,
+      "active_share": 0.965,
+      "false_relative_per_hh_year": 1.4655303030303033,
+      "false_relative_home_days_per_hh_year": 1.2443181818181819,
+      "checkins_per_hh_year": 18.913636363636368,
+      "morning_share": 0.6037735849056604
+    }
+  }
+}

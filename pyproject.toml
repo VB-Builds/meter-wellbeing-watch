@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "meter-wellbeing-watch"
+version = "0.1.0"
+description = "Open-source, opt-in watch-over service: notices unusual inactivity from a 15-minute smart-meter profile. Simulated data only."
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "MIT" }
+dependencies = ["numpy>=1.26", "pandas>=2.0", "matplotlib>=3.8"]
+
+[project.optional-dependencies]
+dev = ["pytest>=8", "ruff>=0.5"]
+
+[project.scripts]
+wellbeing-watch = "wellbeing_watch.cli:main"
+
+[tool.setuptools]
+packages = ["wellbeing_watch"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-p no:asyncio"
+
+[tool.ruff]
+line-length = 130
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "B"]
