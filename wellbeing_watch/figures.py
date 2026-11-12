@@ -237,7 +237,7 @@ def write_linkedin(s: dict, path: Path) -> dict:
         "Not verified: any real household, real meter data latency, real replies to SMS, legal review. It is not "
         "a medical or emergency device.\n\n"
         "Would you opt in for a parent, and what would you need to see first?\n\n"
-        f"Code: https://github.com/Usernamepersonperson/{REPO}"
+        f"Code: https://github.com/VB-Builds/{REPO}"
     )
     path.write_text(json.dumps(d, indent=2, ensure_ascii=False), encoding="utf-8")
     return d
